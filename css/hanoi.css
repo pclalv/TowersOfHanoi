@@ -1,0 +1,48 @@
+html, head, body, figure, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  background: transparent;
+  text-decoration: inherit;
+  text-align: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid {
+  border: 5px solid black;
+  margin: 100px auto;
+  width: 300px;
+  height: 300px;
+}
+
+.grid .tower {
+  width: 90px;
+  height: 290px;
+  display: block;
+  float: left;
+  border: 5px solid red;
+  position: relative;
+}
+
+.grid .tower .stacked {
+  width: 90px;
+  height: 90px;
+  background: black;
+  
+}
+
+
+.grid .tower li:last-child {
+  position: absolute;
+  bottom: 0;
+}
